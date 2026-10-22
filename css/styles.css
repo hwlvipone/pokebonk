@@ -99,6 +99,13 @@ a:hover { color: var(--accent-hover); text-decoration: underline; }
   letter-spacing: -0.02em;
 }
 .logo:hover { color: var(--text); text-decoration: none; }
+.logo-mark {
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  flex-shrink: 0;
+  display: block;
+}
 .logo-ball {
   width: 28px;
   height: 28px;
@@ -410,4 +417,20 @@ a:hover { color: var(--accent-hover); text-decoration: underline; }
   width: 100%;
   border-radius: var(--radius);
   border: 1px solid var(--border);
+}
+
+
+/* Blog */
+.blog-card {
+  margin-bottom: 1.25rem;
+}
+.blog-meta {
+  margin: 0;
+  font-size: 0.85rem;
+  color: var(--text-muted);
+}
+
+/* Legal pages */
+.legal-copy h2 {
+  margin-top: 1.75rem;
 }

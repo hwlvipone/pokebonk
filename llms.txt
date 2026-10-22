@@ -23,7 +23,10 @@
 - How to play (in-page): https://playpokebonk.org/#how-to-play
 - FAQ (in-page): https://playpokebonk.org/#faq
 - Gameplay video (in-page): https://playpokebonk.org/#gameplay-video
+- Blog: https://playpokebonk.org/blog.html
 - About / disclaimer: https://playpokebonk.org/about.html
+- Terms of Use / Legal: https://playpokebonk.org/terms.html
+- Privacy Policy: https://playpokebonk.org/privacy.html
 - Full machine summary: https://playpokebonk.org/llms-full.txt
 - Sitemap: https://playpokebonk.org/sitemap.xml
 

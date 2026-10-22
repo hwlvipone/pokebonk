@@ -27,12 +27,15 @@ Until DNS propagates, the old `https://hwlvipone.github.io/pokebonk/` URL may st
 | File | Role |
 |------|------|
 | `index.html` | Single hub: hero + `#play` iframe + intro + gameplay video + `#how-to-play` + `#faq` |
+| `blog.html` | Blog index + sample pokemon browser survivor article |
 | `about.html` | Hub purpose + trademark disclaimer |
+| `terms.html` | Terms of Use / Legal |
+| `privacy.html` | Privacy Policy |
 | `CNAME` | GitHub Pages custom domain → `playpokebonk.org` |
-| `robots.txt` / `sitemap.xml` | Crawl / index (home + about only) |
+| `robots.txt` / `sitemap.xml` | Crawl / index (home, about, blog, terms, privacy) |
 | `llms.txt` / `llms-full.txt` | GEO / AEO summaries |
 
-Shared assets: `css/styles.css`, `js/site.config.js`, `js/main.js`, `assets/og-card.jpg`.
+Shared assets: `css/styles.css`, `js/site.config.js`, `js/main.js`, `assets/og-card.jpg`, `assets/logo-mark.png`, `assets/favicon.ico`, `assets/favicon-32.png`, `assets/apple-touch-icon.png`.
 
 ### Nav (index)
 
@@ -40,7 +43,10 @@ Shared assets: `css/styles.css`, `js/site.config.js`, `js/main.js`, `assets/og-c
 - **Home** → `#` (top)
 - **How to Play** → `#how-to-play`
 - **FAQ** → `#faq`
+- **Blog** → `blog.html`
 - **About** → `about.html`
+- **Terms** → `terms.html`
+- **Privacy** → `privacy.html`
 
 ## Configure domain (`origin`)
 

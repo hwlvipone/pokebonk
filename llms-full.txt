@@ -1,7 +1,7 @@
 # PokéBonk — full site summary for AI / GEO systems
 
 ## What this site is
-Static HTML+CSS+JS English play hub for **PokéBonk**, a free 3D Pokémon-style survivor browser fan game featuring the classic Kanto roster (~151 Pokémon mentioned on the official game site). The homepage embeds the playable game via iframe from https://pokebonk.com/?lang=en and hosts How to Play + FAQ as in-page sections with fragment IDs, plus a short community gameplay video.
+Static HTML+CSS+JS English play hub for **PokéBonk**, a free 3D Pokémon-style survivor browser fan game featuring the classic Kanto roster (~151 Pokémon mentioned on the official game site). The homepage embeds the playable game via iframe from https://pokebonk.com/?lang=en and hosts How to Play + FAQ as in-page sections with fragment IDs, plus a short community gameplay video. Separate pages cover Blog, About, Terms, and Privacy.
 
 Site origin (custom domain): https://playpokebonk.org/
 
@@ -13,7 +13,7 @@ Site origin (custom domain): https://playpokebonk.org/
 - **Loop:** WASD movement, auto-attacks, evolve, Ultimates, League progression
 - **Access:** Free browser play; guest play supported; no download required for normal play
 - **Languages:** Official game is multilingual; this hub is English (global)
-- **Visual identity:** dark purple background #1a1630, accent #e94756
+- **Visual identity:** dark purple background #1a1630, accent #e94756; logo mark / favicon under /assets/
 
 ## SEO / GEO positioning
 - Primary homepage bet: **pokemon browser game** + brand **pokebonk** (free, 3D, survivor, Kanto, unofficial)
@@ -33,27 +33,35 @@ PokéBonk is an **unofficial fan game**. It is not affiliated with, endorsed by,
 | /#how-to-play | In-page how-to section (stable fragment) |
 | /#faq | In-page FAQ section (stable fragment) + FAQPage JSON-LD on index |
 | /#gameplay-video | Short community YouTube embed (PokéBonk beginner walkthrough) |
+| /blog.html | Blog index + sample article (pokemon browser survivor / how to play) |
 | /about.html | Entity summary + trademark disclaimer + fangame discovery context |
+| /terms.html | Terms of Use / Legal (unofficial, trademarks, embeds, as-is, liability) |
+| /privacy.html | Privacy Policy (static hub; no first-party analytics by default; third-party iframe/YouTube) |
 | /llms.txt | Short machine-readable summary |
 | /llms-full.txt | This file |
-| /sitemap.xml | URL list (index + about only) |
+| /sitemap.xml | URL list (index, about, blog, terms, privacy) |
 | /robots.txt | Crawl rules |
 | /CNAME | GitHub Pages custom domain: playpokebonk.org |
 
 ## Nav structure
 - Play → #play (in-page iframe; src remains https://pokebonk.com/?lang=en)
-- Home → # (top of index)
+- Home → # or index.html
 - How to Play → #how-to-play
 - FAQ → #faq
-- About → about.html (separate page)
+- Blog → blog.html
+- About → about.html
+- Terms → terms.html
+- Privacy → privacy.html
 
 ## Technical notes for crawlers
 - Semantic HTML; sticky header; CSS `scroll-behavior: smooth`
+- Favicon / icons: /assets/favicon.ico, /assets/favicon-32.png, /assets/apple-touch-icon.png; header logo: /assets/logo-mark.png
 - Open Graph + Twitter cards; shared image at https://playpokebonk.org/assets/og-card.jpg
-- JSON-LD on index `@graph`: WebSite + Organization + VideoGame + HowTo + FAQPage
+- JSON-LD on index `@graph`: WebSite + Organization + VideoGame + HowTo + FAQPage; BreadcrumbList on inner pages
 - iframe allow: fullscreen, autoplay, gamepad, etc.
-- No React/SPA; single-page hub for play/how-to/faq + separate about
+- No React/SPA; single-page hub for play/how-to/faq + separate about/blog/legal pages
 - Canonical for main content: https://playpokebonk.org/
+- No first-party analytics scripts in shipped Hub JS as of this summary
 
 ## Canonical sources
 - Gameplay & product updates: https://pokebonk.com/

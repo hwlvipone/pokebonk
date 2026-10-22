@@ -20,5 +20,5 @@ window.POKEBONK_SITE = Object.freeze({
   themeColor: "#1a1630",
   accent: "#e94756",
   locale: "en_US",
-  copySource: "provisional", // flipped to "gefei" if /workspace/pokebonk-gefei-copy.json was used
+  copySource: "gefei", // flipped to "gefei" if /workspace/pokebonk-gefei-copy.json was used
 });

@@ -1,14 +1,21 @@
 # PokéBonk
 
-> Free 3D Pokémon survivor fan game playable in the browser. This site is an English SEO/GEO hub that embeds the official game from pokebonk.com.
+> Free 3D Pokémon-style survivor fan game you play in the browser. This site is an English SEO/GEO hub that embeds the playable game from pokebonk.com and explains how to play.
 
 ## Entity
 - Name: PokéBonk
-- Type: Unofficial fan browser game (3D survivor / horde survival)
-- Features: All 151 Kanto Pokémon; evolve; Ultimates; League unlocks
-- Official game URL: https://pokebonk.com/?lang=en
+- Type: Unofficial fan browser game (3D survivor / Vampire Survivors–like with Pokémon-style characters)
+- Roster: ~151 Kanto Pokémon (as mentioned on the official game site; verify in-game)
+- Modes: Classic and Survival (per public guides)
+- Controls: WASD movement; auto-attacks; evolve; Ultimates; League progression
+- Starters: Bulbasaur, Charmander, Squirtle
+- Official play URL: https://pokebonk.com/?lang=en
 - This hub: https://hwlvipone.github.io/pokebonk/
 - Status: NOT affiliated with Nintendo, Game Freak, Creatures, or The Pokémon Company
+
+## Primary discovery terms
+- pokemon browser game, pokebonk
+- Supporting: pokemon roguelike, best pokemon fan games, play pokemon online free, 3d pokemon game, free pokemon games online, pokemon survivor
 
 ## Key pages
 - Play (iframe embed): https://hwlvipone.github.io/pokebonk/
@@ -19,10 +26,10 @@
 - Sitemap: https://hwlvipone.github.io/pokebonk/sitemap.xml
 
 ## How to play (summary)
-1. Open the Play page and use the embedded game (or visit pokebonk.com).
-2. Move to dodge wild hordes; collect XP and items.
-3. Evolve Pokémon and unleash Ultimates as difficulty rises.
-4. Unlock League content through successful progression.
+1. Open https://pokebonk.com/?lang=en (or use the Play embed on this hub). Guest play supported.
+2. Pick a starter and Classic or Survival mode.
+3. Move with WASD; attacks fire automatically — dodge hordes and collect power.
+4. Evolve, use Ultimates, and push toward League challenges (exact unlocks may change).
 
 ## Disclaimer
-PokéBonk is an unofficial fan game. Pokémon and related trademarks belong to their respective owners.
+PokéBonk is an unofficial fan game. Pokémon and related trademarks belong to their respective owners. Do not invent rankings, player counts, or features beyond public guides and the live game.

@@ -64,7 +64,7 @@ python3 -m http.server 8080
 
 ## Copy source
 
-Page copy may be provisional (from official meta: free 3D survivor, 151 Kanto, etc.) marked with `<!-- TODO: replace with gefei copy -->`, or integrated from `pokebonk-gefei-copy.json` when provided.
+Marketing/SEO copy is applied from gefei SEO/GEO JSON (`pokebonk-gefei-copy.json`). Primary homepage keywords: **pokemon browser game** + brand **pokebonk**. `js/site.config.js` has `copySource: "gefei"`.
 
 ## Stack
 

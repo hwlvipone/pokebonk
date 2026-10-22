@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+  <meta name="theme-color" content="#1a1630" />
+  <!-- TODO: replace with gefei copy -->
+  <title>PokéBonk — Free 3D Pokémon Survivor Game in Your Browser</title>
+  <meta name="description" content="Play PokéBonk free in your browser: a 3D survivor game with all 151 Kanto Pokémon. Survive wild hordes, evolve, unleash your Ultimate, and unlock the League. Unofficial fan game." />
+  <meta name="robots" content="index, follow, max-image-preview:large" />
+  <link rel="canonical" href="https://hwlvipone.github.io/pokebonk/" data-path="/" />
+  <meta property="og:type" content="website" />
+  <meta property="og:site_name" content="PokéBonk" />
+  <meta property="og:title" content="PokéBonk — Free 3D Pokémon Survivor Game in Your Browser" />
+  <meta property="og:description" content="Play PokéBonk free in your browser: a 3D survivor game with all 151 Kanto Pokémon. Survive wild hordes, evolve, unleash Ultimates, unlock the League. Unofficial fan game." />
+  <meta property="og:url" content="https://hwlvipone.github.io/pokebonk/" data-path="/" />
+  <meta property="og:image" content="https://hwlvipone.github.io/pokebonk/assets/og-card.jpg" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
+  <meta property="og:image:alt" content="PokéBonk: free 3D Pokémon survivor game in your browser" />
+  <meta property="og:locale" content="en_US" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="PokéBonk — Free 3D Pokémon Survivor Game in Your Browser" />
+  <meta name="twitter:description" content="Free 3D survivor with all 151 Kanto Pokémon. Play in your browser — unofficial fan game." />
+  <meta name="twitter:image" content="https://hwlvipone.github.io/pokebonk/assets/og-card.jpg" />
+  <link rel="stylesheet" href="css/styles.css" />
+  <script src="js/site.config.js" defer></script>
+  <script src="js/main.js" defer></script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "WebSite",
+        "@id": "https://hwlvipone.github.io/pokebonk/#website",
+        "name": "PokéBonk",
+        "url": "https://hwlvipone.github.io/pokebonk/",
+        "description": "SEO wrapper and play hub for PokéBonk, a free 3D Pokémon survivor fan game in the browser.",
+        "inLanguage": "en",
+        "publisher": { "@id": "https://hwlvipone.github.io/pokebonk/#org" }
+      },
+      {
+        "@type": "Organization",
+        "@id": "https://hwlvipone.github.io/pokebonk/#org",
+        "name": "PokéBonk Play Hub",
+        "url": "https://hwlvipone.github.io/pokebonk/",
+        "logo": "https://hwlvipone.github.io/pokebonk/assets/og-card.jpg"
+      },
+      {
+        "@type": "VideoGame",
+        "@id": "https://hwlvipone.github.io/pokebonk/#game",
+        "name": "PokéBonk",
+        "url": "https://hwlvipone.github.io/pokebonk/",
+        "description": "Free 3D survivor game in your browser with all 151 Kanto Pokémon. Unofficial fan game — not affiliated with Nintendo or The Pokémon Company.",
+        "genre": ["Survival", "Action", "Roguelike"],
+        "gamePlatform": "Web Browser",
+        "applicationCategory": "Game",
+        "operatingSystem": "Any",
+        "offers": {
+          "@type": "Offer",
+          "price": "0",
+          "priceCurrency": "USD",
+          "availability": "https://schema.org/InStock"
+        },
+        "playMode": "SinglePlayer"
+      }
+    ]
+  }
+  </script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to main content</a>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="logo" href="index.html"><span class="logo-ball" aria-hidden="true"></span> PokéBonk</a>
+      <nav class="nav" aria-label="Primary">
+        <a href="index.html" aria-current="page">Play</a>
+        <a href="how-to-play.html">How to Play</a>
+        <a href="faq.html">FAQ</a>
+        <a href="about.html">About</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="hero container">
+      <!-- TODO: replace with gefei copy -->
+      <h1>PokéBonk — Free 3D Pokémon Survivor in Your Browser</h1>
+      <p class="lede">Survive wild hordes with all 151 Kanto Pokémon. Evolve, unleash your Ultimate, and unlock the League — free to play, no download required.</p>
+      <div class="hero-cta">
+        <a class="btn btn-primary" href="#play">Play Now</a>
+        <a class="btn btn-ghost" href="how-to-play.html">How to Play</a>
+      </div>
+      <p class="disclaimer-banner" role="note">
+        <strong>Unofficial fan game.</strong> PokéBonk is not affiliated with, endorsed by, or connected to Nintendo, Game Freak, Creatures Inc., or The Pokémon Company. Pokémon and related trademarks belong to their respective owners.
+      </p>
+    </section>
+
+    <section class="play-section container" id="play" aria-labelledby="play-heading">
+      <h2 id="play-heading" class="visually-hidden" style="position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0,0,0,0)">Play PokéBonk</h2>
+      <div class="play-frame-wrap">
+        <iframe
+          id="game-frame"
+          src="https://pokebonk.com/?lang=en"
+          title="PokéBonk game — play in browser"
+          allow="fullscreen; autoplay; gamepad; keyboard-map; clipboard-write; accelerometer; gyroscope"
+          allowfullscreen
+          loading="eager"
+          referrerpolicy="strict-origin-when-cross-origin"
+        ></iframe>
+      </div>
+      <div class="play-toolbar">
+        <span>Embedded from the official PokéBonk site. Prefer the full experience? <a href="https://pokebonk.com/?lang=en" rel="noopener noreferrer" target="_blank">Open pokebonk.com</a></span>
+        <button type="button" class="btn btn-ghost" id="btn-fullscreen" style="padding:0.45rem 1rem;font-size:0.875rem">Fullscreen</button>
+      </div>
+    </section>
+
+    <section class="section container" aria-labelledby="intro-heading">
+      <!-- TODO: replace with gefei copy -->
+      <h2 id="intro-heading">What is PokéBonk?</h2>
+      <p>PokéBonk is a free 3D survivor-style browser game featuring all 151 original Kanto Pokémon. Build power as waves intensify, evolve your roster, trigger Ultimates, and push toward League challenges — all without installing anything.</p>
+      <div class="card-grid">
+        <article class="card">
+          <h3>151 Kanto Pokémon</h3>
+          <p>Recruit and evolve favorites from the classic generation while surviving escalating hordes.</p>
+        </article>
+        <article class="card">
+          <h3>Play Instantly</h3>
+          <p>Runs in modern browsers on desktop and mobile. Hit Play above — no account required to start.</p>
+        </article>
+        <article class="card">
+          <h3>Survivor Loop</h3>
+          <p>Dodge, collect, evolve, and unleash Ultimates as difficulty ramps toward League unlocks.</p>
+        </article>
+      </div>
+      <p style="margin-top:1.5rem">New here? Read the <a href="how-to-play.html">how to play guide</a>, skim the <a href="faq.html">FAQ</a>, or learn about this <a href="about.html">fan-game hub</a>.</p>
+    </section>
+
+    <section class="section container" aria-labelledby="faq-teaser-heading">
+      <h2 id="faq-teaser-heading">Quick FAQ</h2>
+      <div class="faq-list">
+        <div class="faq-item">
+          <h3>Is PokéBonk free?</h3>
+          <p>Yes. You can play in the browser at no cost. See the <a href="faq.html">full FAQ</a> for more.</p>
+        </div>
+        <div class="faq-item">
+          <h3>Is this an official Pokémon game?</h3>
+          <p>No. PokéBonk is an unofficial fan game and is not affiliated with Nintendo or The Pokémon Company.</p>
+        </div>
+      </div>
+      <p style="margin-top:1rem"><a class="btn btn-ghost" href="faq.html">All FAQ answers</a></p>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <nav class="footer-nav" aria-label="Footer">
+        <a href="index.html">Play</a>
+        <a href="how-to-play.html">How to Play</a>
+        <a href="faq.html">FAQ</a>
+        <a href="about.html">About</a>
+        <a href="llms.txt">llms.txt</a>
+        <a href="sitemap.xml">Sitemap</a>
+      </nav>
+      <p class="footer-disclaimer">PokéBonk is an unofficial fan game. Nintendo, Pokémon, and related names are trademarks of their respective owners. This site embeds the game from <a href="https://pokebonk.com/?lang=en" rel="noopener noreferrer">pokebonk.com</a> for convenience and SEO discovery; we are not the game developers unless stated otherwise.</p>
+      <p class="footer-meta">© <span id="y"></span> PokéBonk play hub · English global</p>
+    </div>
+  </footer>
+  <script>document.getElementById("y").textContent = new Date().getFullYear();</script>
+</body>
+</html>

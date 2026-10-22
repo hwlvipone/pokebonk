@@ -36,7 +36,7 @@ PokéBonk is an **unofficial fan game**. It is not affiliated with, endorsed by,
 | /blog.html | Blog index + sample article (pokemon browser survivor / how to play) |
 | /about.html | Entity summary + trademark disclaimer + fangame discovery context |
 | /terms.html | Terms of Use / Legal (unofficial, trademarks, embeds, as-is, liability) |
-| /privacy.html | Privacy Policy (static hub; no first-party analytics by default; third-party iframe/YouTube) |
+| /privacy.html | Privacy Policy (static hub; Google Analytics gtag G-MXD7JQJ7YP; third-party iframe/YouTube) |
 | /llms.txt | Short machine-readable summary |
 | /llms-full.txt | This file |
 | /sitemap.xml | URL list (index, about, blog, terms, privacy) |
@@ -61,7 +61,7 @@ PokéBonk is an **unofficial fan game**. It is not affiliated with, endorsed by,
 - iframe allow: fullscreen, autoplay, gamepad, etc.
 - No React/SPA; single-page hub for play/how-to/faq + separate about/blog/legal pages
 - Canonical for main content: https://playpokebonk.org/
-- No first-party analytics scripts in shipped Hub JS as of this summary
+- First-party Google Analytics via gtag.js (G-MXD7JQJ7YP); plus third-party iframe/YouTube cookies possible
 
 ## Canonical sources
 - Gameplay & product updates: https://pokebonk.com/

@@ -1,19 +1,20 @@
 /**
  * PokéBonk SEO wrapper — site configuration
  *
- * ORIGIN: Set this to your public site origin (no trailing slash) before deploy.
+ * ORIGIN: Production custom domain (no trailing slash).
+ * DNS / GitHub Pages custom domain must point here; see README.
  * Examples:
- *   "https://hwlvipone.github.io/pokebonk"  // GitHub Pages (project site)
- *   "https://pokebonk.example.com"          // Custom / Cloudflare Pages
- *   ""                                      // Path-only relative URLs (dev / pre-domain)
+ *   "https://playpokebonk.org"              // Custom domain (production)
+ *   "https://hwlvipone.github.io/pokebonk"  // GitHub Pages project fallback
+ *   ""                                      // Path-only relative URLs (dev)
  *
  * When ORIGIN is empty, canonicals and sitemap use path-only relative URLs.
  * Absolute OG/Twitter image URLs still need a real origin for social crawlers.
  */
 window.POKEBONK_SITE = Object.freeze({
   name: "PokéBonk",
-  // GitHub Pages project site under hwlvipone/pokebonk
-  origin: "https://hwlvipone.github.io/pokebonk",
+  // Production origin (custom domain). GitHub Pages serves this repo at domain root.
+  origin: "https://playpokebonk.org",
   iframeSrc: "https://pokebonk.com/?lang=en",
   officialUrl: "https://pokebonk.com/?lang=en",
   ogImagePath: "/assets/og-card.jpg",

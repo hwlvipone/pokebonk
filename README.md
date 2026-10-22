@@ -6,18 +6,30 @@ Static **HTML + CSS + JS** English landing site that embeds the official [PokéB
 
 ## Live
 
-- **GitHub Pages (intended):** https://hwlvipone.github.io/pokebonk/
+- **Production origin:** https://playpokebonk.org/
+- **GitHub repo / Pages source:** https://github.com/hwlvipone/pokebonk
 - **Iframe source:** `https://pokebonk.com/?lang=en` (iframeable; no `X-Frame-Options` on the game origin)
+
+### Custom domain (DNS / GitHub Pages)
+
+Code and SEO files assume **`https://playpokebonk.org`** (site at domain root, no `/pokebonk` path prefix).
+
+You still need to finish hosting wiring:
+
+1. Repo root includes a `CNAME` file with `playpokebonk.org`
+2. In GitHub → Settings → Pages → Custom domain: set `playpokebonk.org` (and enable HTTPS when available)
+3. At your DNS provider: point apex / `www` per GitHub Pages docs (A/ALIAS/CNAME as required)
+
+Until DNS propagates, the old `https://hwlvipone.github.io/pokebonk/` URL may still serve the same branch.
 
 ## Pages
 
 | File | Role |
 |------|------|
-| `index.html` | Single hub: hero + play iframe + intro + `#how-to-play` + `#faq` |
-| `how-to-play.html` | Thin redirect → `/#how-to-play` (legacy URLs) |
-| `faq.html` | Thin redirect → `/#faq` (legacy URLs) |
+| `index.html` | Single hub: hero + `#play` iframe + intro + gameplay video + `#how-to-play` + `#faq` |
 | `about.html` | Hub purpose + trademark disclaimer |
-| `robots.txt` / `sitemap.xml` | Crawl / index |
+| `CNAME` | GitHub Pages custom domain → `playpokebonk.org` |
+| `robots.txt` / `sitemap.xml` | Crawl / index (home + about only) |
 | `llms.txt` / `llms-full.txt` | GEO / AEO summaries |
 
 Shared assets: `css/styles.css`, `js/site.config.js`, `js/main.js`, `assets/og-card.jpg`.
@@ -35,7 +47,7 @@ Shared assets: `css/styles.css`, `js/site.config.js`, `js/main.js`, `assets/og-c
 Edit **one place**: `js/site.config.js`
 
 ```js
-origin: "https://hwlvipone.github.io/pokebonk",
+origin: "https://playpokebonk.org",
 ```
 
 Also update absolute URLs in:
@@ -45,7 +57,7 @@ Also update absolute URLs in:
 - `sitemap.xml` (`<loc>`)
 - `llms.txt` / `llms-full.txt`
 
-If you move to a custom domain (e.g. Cloudflare Pages), replace that origin everywhere (or regenerate from a single build step later). Empty / wrong origin breaks absolute canonicals and social previews.
+If you move domains again, replace that origin everywhere (or regenerate from a single build step later). Empty / wrong origin breaks absolute canonicals and social previews.
 
 ## Local preview
 
@@ -57,18 +69,18 @@ python3 -m http.server 8080
 
 ## Deploy tips
 
-### GitHub Pages
+### GitHub Pages + custom domain
 
-1. Repo Settings → Pages → Source: **Deploy from a branch**
-2. Branch: `main` / folder: `/ (root)`
-3. Site URL: `https://hwlvipone.github.io/pokebonk/`
+1. Settings → Pages → Source: **Deploy from a branch** (`main` / `/ (root)`)
+2. Custom domain: `playpokebonk.org` (matches `CNAME`)
+3. Production URL: `https://playpokebonk.org/`
 
 ### Cloudflare Pages
 
 1. Connect this GitHub repo
 2. Build command: none (static)
 3. Output directory: `/`
-4. Set custom domain, then update `origin` + sitemap/canonicals as above
+4. Attach `playpokebonk.org`, then keep `origin` + sitemap/canonicals as above
 
 ## Copy source
 

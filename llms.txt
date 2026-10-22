@@ -10,7 +10,7 @@
 - Controls: WASD movement; auto-attacks; evolve; Ultimates; League progression
 - Starters: Bulbasaur, Charmander, Squirtle
 - Official play URL: https://pokebonk.com/?lang=en
-- This hub: https://hwlvipone.github.io/pokebonk/
+- This hub: https://playpokebonk.org/
 - Status: NOT affiliated with Nintendo, Game Freak, Creatures, or The Pokémon Company
 
 ## Primary discovery terms
@@ -18,14 +18,14 @@
 - Supporting: pokemon roguelike, best pokemon fan games, play pokemon online free, 3d pokemon game, free pokemon games online, pokemon survivor
 
 ## Key pages / anchors
-- Home (play embed + intro + how-to + FAQ): https://hwlvipone.github.io/pokebonk/
-- Play (in-page iframe): https://hwlvipone.github.io/pokebonk/#play
-- How to play (in-page): https://hwlvipone.github.io/pokebonk/#how-to-play
-- FAQ (in-page): https://hwlvipone.github.io/pokebonk/#faq
-- About / disclaimer: https://hwlvipone.github.io/pokebonk/about.html
-- Legacy redirects: /how-to-play.html → /#how-to-play ; /faq.html → /#faq
-- Full machine summary: https://hwlvipone.github.io/pokebonk/llms-full.txt
-- Sitemap: https://hwlvipone.github.io/pokebonk/sitemap.xml
+- Home (play embed + intro + gameplay video + how-to + FAQ): https://playpokebonk.org/
+- Play (in-page iframe): https://playpokebonk.org/#play
+- How to play (in-page): https://playpokebonk.org/#how-to-play
+- FAQ (in-page): https://playpokebonk.org/#faq
+- Gameplay video (in-page): https://playpokebonk.org/#gameplay-video
+- About / disclaimer: https://playpokebonk.org/about.html
+- Full machine summary: https://playpokebonk.org/llms-full.txt
+- Sitemap: https://playpokebonk.org/sitemap.xml
 
 ## How to play (summary)
 1. Open https://pokebonk.com/?lang=en (or use the Play embed on this hub). Guest play supported.

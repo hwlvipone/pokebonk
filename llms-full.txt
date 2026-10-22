@@ -40,7 +40,7 @@ PokéBonk is an **unofficial fan game**. It is not affiliated with, endorsed by,
 | /robots.txt | Crawl rules |
 
 ## Nav structure
-- Play → external https://pokebonk.com/?lang=en
+- Play → #play (in-page iframe; src remains https://pokebonk.com/?lang=en)
 - Home → # (top of index)
 - How to Play → #how-to-play
 - FAQ → #faq

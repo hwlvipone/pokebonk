@@ -24,7 +24,7 @@ Shared assets: `css/styles.css`, `js/site.config.js`, `js/main.js`, `assets/og-c
 
 ### Nav (index)
 
-- **Play** → external `https://pokebonk.com/?lang=en`
+- **Play** → `#play` (in-page iframe embed)
 - **Home** → `#` (top)
 - **How to Play** → `#how-to-play`
 - **FAQ** → `#faq`

@@ -19,6 +19,7 @@
 
 ## Key pages / anchors
 - Home (play embed + intro + how-to + FAQ): https://hwlvipone.github.io/pokebonk/
+- Play (in-page iframe): https://hwlvipone.github.io/pokebonk/#play
 - How to play (in-page): https://hwlvipone.github.io/pokebonk/#how-to-play
 - FAQ (in-page): https://hwlvipone.github.io/pokebonk/#faq
 - About / disclaimer: https://hwlvipone.github.io/pokebonk/about.html

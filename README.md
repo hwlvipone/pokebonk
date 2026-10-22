@@ -1,6 +1,6 @@
 # PokéBonk — SEO / GEO play hub
 
-Static **HTML + CSS + JS** English landing site that embeds the official [PokéBonk](https://pokebonk.com/?lang=en) browser game in an iframe, with guides, FAQ, and machine-readable GEO files (`llms.txt`).
+Static **HTML + CSS + JS** English landing site that embeds the official [PokéBonk](https://pokebonk.com/?lang=en) browser game in an iframe, with how-to-play and FAQ as **in-page sections** on the home page, plus machine-readable GEO files (`llms.txt`).
 
 > **Unofficial fan game.** Not affiliated with Nintendo, Game Freak, Creatures, or The Pokémon Company.
 
@@ -13,14 +13,22 @@ Static **HTML + CSS + JS** English landing site that embeds the official [PokéB
 
 | File | Role |
 |------|------|
-| `index.html` | Hero + play iframe + intro + FAQ teaser |
-| `how-to-play.html` | Controls & progression guide |
-| `faq.html` | FAQ + `FAQPage` JSON-LD |
+| `index.html` | Single hub: hero + play iframe + intro + `#how-to-play` + `#faq` |
+| `how-to-play.html` | Thin redirect → `/#how-to-play` (legacy URLs) |
+| `faq.html` | Thin redirect → `/#faq` (legacy URLs) |
 | `about.html` | Hub purpose + trademark disclaimer |
 | `robots.txt` / `sitemap.xml` | Crawl / index |
 | `llms.txt` / `llms-full.txt` | GEO / AEO summaries |
 
 Shared assets: `css/styles.css`, `js/site.config.js`, `js/main.js`, `assets/og-card.jpg`.
+
+### Nav (index)
+
+- **Play** → external `https://pokebonk.com/?lang=en`
+- **Home** → `#` (top)
+- **How to Play** → `#how-to-play`
+- **FAQ** → `#faq`
+- **About** → `about.html`
 
 ## Configure domain (`origin`)
 
@@ -64,8 +72,8 @@ python3 -m http.server 8080
 
 ## Copy source
 
-Marketing/SEO copy is applied from gefei SEO/GEO JSON (`pokebonk-gefei-copy.json`). Primary homepage keywords: **pokemon browser game** + brand **pokebonk**. `js/site.config.js` has `copySource: "gefei"`.
+Marketing/SEO copy is applied from gefei SEO/GEO JSON (`pokebonk-gefei-copy.json`). Primary homepage keywords: **pokemon browser game** + brand **pokebonk**. `js/site.config.js` has `copySource: "gefei"` and `singlePageHowToFaq: true`.
 
 ## Stack
 
-Plain multi-page HTML. No React, Next, or ShipAny.
+Plain HTML. No React, Next, or ShipAny. How-to + FAQ are single-page sections with fragment anchors; About remains a separate page.

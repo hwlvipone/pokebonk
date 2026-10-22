@@ -18,6 +18,14 @@
 
 html { scroll-behavior: smooth; }
 
+/* Offset in-page anchors under sticky header */
+#how-to-play,
+#faq,
+#play,
+#top {
+  scroll-margin-top: 5rem;
+}
+
 body {
   margin: 0;
   font-family: var(--font);

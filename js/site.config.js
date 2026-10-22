@@ -21,4 +21,6 @@ window.POKEBONK_SITE = Object.freeze({
   accent: "#e94756",
   locale: "en_US",
   copySource: "gefei", // flipped to "gefei" if /workspace/pokebonk-gefei-copy.json was used
+  // Hub layout: how-to-play + FAQ live on index.html as #how-to-play / #faq (about.html stays separate).
+  singlePageHowToFaq: true,
 });

@@ -1,6 +1,6 @@
 # PokéBonk
 
-> Free 3D Pokémon-style survivor fan game you play in the browser. This site is an English SEO/GEO hub that embeds the playable game from pokebonk.com and explains how to play.
+> Free 3D Pokémon-style survivor fan game you play in the browser. This site is an English SEO/GEO hub that embeds the playable game from pokebonk.com and explains how to play on a single scrollable page.
 
 ## Entity
 - Name: PokéBonk
@@ -17,11 +17,12 @@
 - pokemon browser game, pokebonk
 - Supporting: pokemon roguelike, best pokemon fan games, play pokemon online free, 3d pokemon game, free pokemon games online, pokemon survivor
 
-## Key pages
-- Play (iframe embed): https://hwlvipone.github.io/pokebonk/
-- How to play: https://hwlvipone.github.io/pokebonk/how-to-play.html
-- FAQ: https://hwlvipone.github.io/pokebonk/faq.html
+## Key pages / anchors
+- Home (play embed + intro + how-to + FAQ): https://hwlvipone.github.io/pokebonk/
+- How to play (in-page): https://hwlvipone.github.io/pokebonk/#how-to-play
+- FAQ (in-page): https://hwlvipone.github.io/pokebonk/#faq
 - About / disclaimer: https://hwlvipone.github.io/pokebonk/about.html
+- Legacy redirects: /how-to-play.html → /#how-to-play ; /faq.html → /#faq
 - Full machine summary: https://hwlvipone.github.io/pokebonk/llms-full.txt
 - Sitemap: https://hwlvipone.github.io/pokebonk/sitemap.xml
 
